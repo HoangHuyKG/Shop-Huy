@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHuy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Eo_circle_green_letter-s.svg/1024px-Eo_circle_green_letter-s.svg.png" type="" sizes="16x16">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid">
+                <nav class="head__nav">
+                    <ul class="nav__list">
+                        <li class="nav__list-item nav__list-item--split">Kênh người bán</li>
+                        <li class="nav__list-item nav__list-item--split">Trở thành người bán ShopHuy</li>
+                        <li class="nav__list-item nav__list-item--split">
+                            Tải ứng dụng
+                                <div class="nav__qr">                
+                                   <img src="./asset/img/QRCode.png" alt="" class="qr-img">
+                                <div class="nav__qr-secondchild">
+                                    <a href="" class="qr-code"><img src="./asset/img/ggplay.png" alt="" class="gg-img"></a>
+                                    <a href="" class="qr-code"><img src="./asset/img/appstore.png" alt="" class="at-img"></a>
+                                </div>
+                                </div>
+                        </li>
+                        <li class="nav__list-item nav__list-item--space">
+                            <span class="nav__list-item--nonehover">Kết nối</span>
+                            <a href="" class="nav__list-item--btn"><i class="fab fa-facebook"></i></a>
+                            <a href="" class="nav__list-item--btn"><i class="fab fa-instagram-square"></i></a>                         
+                    </ul>
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link nav__list-item--space">
+                                <i class="far fa-bell"></i>
+                                Thông báo
+                                <div class="nav-notify">
+                                    <div class="nav-notify-header">
+                                        <img src="./asset/img/notify-smile.png" alt="" class="nav-notify-img">
+                                        <p class="nav-notify-text">Đăng nhập để nhận Thông báo</p>
+                                    </div>
+                                    <div class="nav-notify-footer">
+                                        <button class="nav-notify-login">Đăng ký</button>
+                                        <button class="nav-notify-logon">Đăng nhập</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a href="#" class="nav__list-link nav__list-item--space">
+                                <i class="far fa-question-circle"></i>
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="nav__list-item nav__list-item--strong nav__list-item--split">Đăng ký</li>
+                        <li class="nav__list-item nav__list-item--strong nav__list-item--space">Đăng nhập</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="headerlower">
+                <div class="img-logo">
+                    <img src="./asset/img/logo.png" alt="" class="img-logo">
+                </div>
+                <div class="headerlower-search">
+                    <div class="headerlower-search--block">
+                        <input type="text" class="search-text" placeholder="Tìm kiếm tại đây">
+                        <div class="search__history">
+                            <div class="history__header">
+                                <p class="history__header--text">Lịch sử tìm kiếm</p>
+                            </div>                          
+                                <div class="list__block">
+                                    <li class="list__item">Bé Manh dễ thương</li>
+                                </div>
+                                <div class="list__block">
+                                    <li class="list__item">Bé Manh dễ thương</li>
+                                </div>
+                                <div class="list__block">
+                                    <li class="list__item">Bé Manh dễ thương</li>
+                                </div>                               
+                        </div>
+                    </div>
+                        <button class="header-search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>          
+                </div>
+                <div class="headerlower-cart">
+                    <i class="fas fa-shopping-cart main-cart">
+                        <div class="headerlower-cart__no-cart">
+                            <img src="./asset/img/bagket.png" alt="" class="no-cart__img">
+                            <div class="headerlower-cart__footer">
+                                <p class="headerlower-cart__footer--text">Chưa có sản phẩm</p>
+                            </div>
+                        </div>
+                    </i>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <div class="category">
+                            <h3 class="category__header">
+                                <i class="category__header-icon fas fa-list-ul"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="catagory-item catagory-item--active">
+                                    <a href="#" class="catagory-item__link">Trang điểm mặt</a>
+                                </li>
+                                <li class="catagory-item">
+                                    <a href="#" class="catagory-item__link">Trang điểm môi</a>
+                                </li>
+                                <li class="catagory-item">
+                                    <a href="#" class="catagory-item__link">Trang điểm mắt</a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="header-filter">
+                            <span class="header-filter__label">Sắp xếp theo</span>
+                            <button class="header-filter__btn btn">Phổ biến</button>
+                            <button class="header-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="header-filter__btn btn">Bán chạy</button>
+                            <div class="header-filter__selection">
+                                <span class="filter-selection-text">Giá</span>
+                                <i class="fas fa-angle-down filter-selection-icon"></i>
+                                <ul class="header-filter__input-list">
+                                    <li class="filter__items">
+                                        <a href="#" class="header-filter__input-item">Giá: Thấp đến Cao</a>
+                                    </li>
+                                    <li class="filter__items">
+                                        <a href="#" class="header-filter__input-item">Giá: Cao đến Thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-filter__page">
+                                <span class="header-filter__pageblock">
+                                    <span class="header-filter__page-num">1</span>
+                                    /14
+                                </span>
+                            </div>
+                            <div class="header-filter__control">
+                                <a href="#" class="header-filter__control-btn">
+                                    <i class="fas fa-angle-left header-filter__control-btn-icon"></i>
+                                </a>
+                                <a href="#" class="header-filter__control-btn">
+                                    <i class="fas fa-angle-right header-filter__control-btn-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-10-2">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/394ed88df2bf7211c65b1871147bd7a4_tn);"></div>
+                                        <h4 class="home-product-item__title">Áo Sweater Cograue unisex, Áo hoodie Nam Nữ Form Rộng Genk</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">100.000đ</span>
+                                            <span class="home-product-item__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__useraction">
+                                            <span class="home-product-item__action-like">
+                                                <i class="far fa-heart "></i>
+                                                <!-- <i class="fas fa-heart "></i> -->
+                                            </span>
+                                            <div class="home-product-item_action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__origin-brand">SamSam</span>
+                                            <span class="home-product-item__origin-country">VietNam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__saleoff">
+                                            <span class="home-product-item__saleoff--percent">10%</span>
+                                            <span class="home-product-item__saleoff--label">GIẢM</span>
+                                        </div>                               
+                                    </div>                                                                                       
+                                </div>
+                                <div class="grid__column-10-2">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/394ed88df2bf7211c65b1871147bd7a4_tn);"></div>
+                                        <h4 class="home-product-item__title">Áo Sweater Cograue unisex, Áo hoodie Nam Nữ Form Rộng Genk</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">100.000đ</span>
+                                            <span class="home-product-item__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__useraction">
+                                            <span class="home-product-item__action-like">
+                                                <i class="far fa-heart "></i>
+                                                <!-- <i class="fas fa-heart "></i> -->
+                                            </span>
+                                            <div class="home-product-item_action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__origin-brand">SamSam</span>
+                                            <span class="home-product-item__origin-country">VietNam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__saleoff">
+                                            <span class="home-product-item__saleoff--percent">10%</span>
+                                            <span class="home-product-item__saleoff--label">GIẢM</span>
+                                        </div>                               
+                                    </div>                                                                                       
+                                </div>
+                                <div class="grid__column-10-2">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/394ed88df2bf7211c65b1871147bd7a4_tn);"></div>
+                                        <h4 class="home-product-item__title">Áo Sweater Cograue unisex, Áo hoodie Nam Nữ Form Rộng Genk</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">100.000đ</span>
+                                            <span class="home-product-item__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__useraction">
+                                            <span class="home-product-item__action-like">
+                                                <i class="far fa-heart "></i>
+                                                <!-- <i class="fas fa-heart "></i> -->
+                                            </span>
+                                            <div class="home-product-item_action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__origin-brand">SamSam</span>
+                                            <span class="home-product-item__origin-country">VietNam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__saleoff">
+                                            <span class="home-product-item__saleoff--percent">10%</span>
+                                            <span class="home-product-item__saleoff--label">GIẢM</span>
+                                        </div>                               
+                                    </div>                                                                                       
+                                </div>
+                                <div class="grid__column-10-2">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/394ed88df2bf7211c65b1871147bd7a4_tn);"></div>
+                                        <h4 class="home-product-item__title">Áo Sweater Cograue unisex, Áo hoodie Nam Nữ Form Rộng Genk</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">100.000đ</span>
+                                            <span class="home-product-item__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__useraction">
+                                            <span class="home-product-item__action-like">
+                                                <i class="far fa-heart "></i>
+                                                <!-- <i class="fas fa-heart "></i> -->
+                                            </span>
+                                            <div class="home-product-item_action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__origin-brand">SamSam</span>
+                                            <span class="home-product-item__origin-country">VietNam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__saleoff">
+                                            <span class="home-product-item__saleoff--percent">10%</span>
+                                            <span class="home-product-item__saleoff--label">GIẢM</span>
+                                        </div>                               
+                                    </div>                                                                                       
+                                </div>
+                                <div class="grid__column-10-2">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/394ed88df2bf7211c65b1871147bd7a4_tn);"></div>
+                                        <h4 class="home-product-item__title">Áo Sweater Cograue unisex, Áo hoodie Nam Nữ Form Rộng Genk</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">100.000đ</span>
+                                            <span class="home-product-item__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__useraction">
+                                            <span class="home-product-item__action-like">
+                                                <i class="far fa-heart "></i>
+                                                <!-- <i class="fas fa-heart "></i> -->
+                                            </span>
+                                            <div class="home-product-item_action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__origin-brand">SamSam</span>
+                                            <span class="home-product-item__origin-country">VietNam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__saleoff">
+                                            <span class="home-product-item__saleoff--percent">10%</span>
+                                            <span class="home-product-item__saleoff--label">GIẢM</span>
+                                        </div>                               
+                                    </div>                                                                                       
+                                </div>
+                                <div class="grid__column-10-2">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/394ed88df2bf7211c65b1871147bd7a4_tn);"></div>
+                                        <h4 class="home-product-item__title">Áo Sweater Cograue unisex, Áo hoodie Nam Nữ Form Rộng Genk</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">100.000đ</span>
+                                            <span class="home-product-item__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__useraction">
+                                            <span class="home-product-item__action-like">
+                                                <i class="far fa-heart "></i>
+                                                <!-- <i class="fas fa-heart "></i> -->
+                                            </span>
+                                            <div class="home-product-item_action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__origin-brand">SamSam</span>
+                                            <span class="home-product-item__origin-country">VietNam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__saleoff">
+                                            <span class="home-product-item__saleoff--percent">10%</span>
+                                            <span class="home-product-item__saleoff--label">GIẢM</span>
+                                        </div>                               
+                                    </div>                                                                                       
+                                </div>
+                                <div class="grid__column-10-2">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/394ed88df2bf7211c65b1871147bd7a4_tn);"></div>
+                                        <h4 class="home-product-item__title">Áo Sweater Cograue unisex, Áo hoodie Nam Nữ Form Rộng Genk</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">100.000đ</span>
+                                            <span class="home-product-item__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__useraction">
+                                            <span class="home-product-item__action-like">
+                                                <i class="far fa-heart "></i>
+                                                <!-- <i class="fas fa-heart "></i> -->
+                                            </span>
+                                            <div class="home-product-item_action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__origin-brand">SamSam</span>
+                                            <span class="home-product-item__origin-country">VietNam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__saleoff">
+                                            <span class="home-product-item__saleoff--percent">10%</span>
+                                            <span class="home-product-item__saleoff--label">GIẢM</span>
+                                        </div>                               
+                                    </div>                                                                                       
+                                </div>
+                                <div class="grid__column-10-2">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/394ed88df2bf7211c65b1871147bd7a4_tn);"></div>
+                                        <h4 class="home-product-item__title">Áo Sweater Cograue unisex, Áo hoodie Nam Nữ Form Rộng Genk</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">100.000đ</span>
+                                            <span class="home-product-item__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__useraction">
+                                            <span class="home-product-item__action-like">
+                                                <i class="far fa-heart "></i>
+                                                <!-- <i class="fas fa-heart "></i> -->
+                                            </span>
+                                            <div class="home-product-item_action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__origin-brand">SamSam</span>
+                                            <span class="home-product-item__origin-country">VietNam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__saleoff">
+                                            <span class="home-product-item__saleoff--percent">10%</span>
+                                            <span class="home-product-item__saleoff--label">GIẢM</span>
+                                        </div>                               
+                                    </div>                                                                                       
+                                </div>
+                                <div class="grid__column-10-2">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/394ed88df2bf7211c65b1871147bd7a4_tn);"></div>
+                                        <h4 class="home-product-item__title">Áo Sweater Cograue unisex, Áo hoodie Nam Nữ Form Rộng Genk</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">100.000đ</span>
+                                            <span class="home-product-item__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__useraction">
+                                            <span class="home-product-item__action-like">
+                                                <i class="far fa-heart"></i>
+                                                <!-- <i class="fas fa-heart "></i> -->
+                                            </span>
+                                            <div class="home-product-item_action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__origin-brand">SamSam</span>
+                                            <span class="home-product-item__origin-country">VietNam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__saleoff">
+                                            <span class="home-product-item__saleoff--percent">10%</span>
+                                            <span class="home-product-item__saleoff--label">GIẢM</span>
+                                        </div>                               
+                                    </div>                                                                                       
+                                </div>
+                                <div class="grid__column-10-2">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/394ed88df2bf7211c65b1871147bd7a4_tn);"></div>
+                                        <h4 class="home-product-item__title">Áo Sweater Cograue unisex, Áo hoodie Nam Nữ Form Rộng Genk</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">100.000đ</span>
+                                            <span class="home-product-item__price-current">90.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__useraction">
+                                            <span class="home-product-item__action-like">
+                                                <i class="far fa-heart "></i>
+                                                <!-- <i class="fas fa-heart "></i> -->
+                                            </span>
+                                            <div class="home-product-item_action-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__origin-brand">SamSam</span>
+                                            <span class="home-product-item__origin-country">VietNam</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="home-product-item__favourite-icon fas fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__saleoff">
+                                            <span class="home-product-item__saleoff--percent">10%</span>
+                                            <span class="home-product-item__saleoff--label">GIẢM</span>
+                                        </div>                               
+                                    </div>                                                                                       
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-10-2">
+                        <h3 class="footer-header">Chăm sóc khách hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="list-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer__list-item"></li>                        
+                                <a href="" class="list-item__link">ShopHuy</a>
+                            </li>
+                            <li class="footer__list-item"></li>          
+                                <a href="" class="list-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-10-2">
+                        <h3 class="footer-header">Giới thiệu</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a href="" class="list-item__link">Giới thiệu</a>
+                            </li>
+                            <li class="footer__list-item"></li>                        
+                                <a href="" class="list-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer__list-item"></li>          
+                                <a href="" class="list-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-10-2">
+                        
+                    </div>
+                    <div class="grid__column-10-2">
+                        <h3 class="footer-header">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <i class="fab fa-facebook item-icon"></i>
+                                <a href="" class="list-item__link">Facebook</a>
+                            </li>
+                            <li class="footer__list-item"></li> 
+                                <i class="fab fa-instagram item-icon"></i>                       
+                                <a href="" class="list-item__link">Instagram</a>
+                            </li>
+                            <li class="footer__list-item"></li> 
+                                <i class="fab fa-linkedin item-icon"></i>         
+                                <a href="" class="list-item__link">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-10-2">
+                        <h3 class="footer-header">Vào cửa hàng trong ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./asset/img/QRCode.png" alt="" class="footer__download-qr">
+                            <div class="footer__download-apps">
+                                <img src="./asset/img/ggplay.png" alt="" class="footer__download-apps--img">
+                                <img src="./asset/img/appstore.png" alt="" class="footer__download-apps--img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer__end">
+            <p class="footer__end-text">@2022 Bản quyền thuộc Bé Huy Cute Phô Mai Que</p>
+        </div>
+    </div>
+
+    <!-- MODAl -->
+    <div class="modal--login">
+        <div class="modal__display"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                    <!-- Authen Form  -->
+                <!-- <div class="authen__container">
+                    <div class="authen__header">
+                        <p class="authen__header--text">Đăng ký</p>
+                        <a href="" class="authen__header--btn">Đăng nhập</a>
+                    </div>
+                    <div class="authen__body">
+                        <div class="authen__body--input">
+                            <input type="email" class="authen__body--tel" placeholder="Nhập email">
+                        </div>
+                        <div class="authen__body--input">
+                            <input type="password" class="authen__body--pw" placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="authen__body--input">
+                            <input type="password" class="authen__body--acpw" placeholder="Xác nhận mật khẩu">
+                        </div>
+                    </div>
+                    <div class="authen__policy">
+                        <p class="authen__policy--text1">
+                            Bằng việc đăng ký, bạn đã đồng ý với ShopHuy về
+                            <a href="" class="authen__policy--text2">Điều khoản dịch vụ</a> &
+                            <a href="" class="authen__policy--text2">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="authen__form-controls">
+                        <button class="btn margin-btn">Trở lại</button>
+                        <button class="btn btn--primary">Đăng ký</button>
+                    </div>        
+                </div>
+                <div class="authen__footer">
+                    <a href="" class="btn-social--fb"><i class="fab fa-facebook-square icon-fb"></i>Kết nối với Facebook</a>
+                    <a href="" class="btn-social--gg"><i class="fab fa-google icon-gg"></i>Kết nối với Google</a>
+                </div> -->
+                    <!-- Form Login -->
+                    <div class="authen__container">
+                        <div class="authen__header">
+                            <p class="authen__header--text">Đăng nhập</p>
+                            <a href="#" class="authen__header--btn click--register">Đăng ký</a>
+                        </div>
+                        <div class="authen__body">
+                            <div class="authen__body--input">
+                                <input type="email" class="authen__body--tel" placeholder="Nhập email">
+                            </div>
+                            <div class="authen__body--input">
+                                <input type="password" class="authen__body--pw" placeholder="Nhập mật khẩu">
+                            </div>
+                            
+                        </div>
+                        <div class="forget-password">
+                            <a href="#" class="forget-password__forget">Quên mật khẩu</a>
+                            <a href="#" class="forget-password__help">Cần trợ giúp?</a>
+                        </div>
+                        <div class="authen__form-controls">
+                            <button class="btn margin-btn">Trở lại</button>
+                            <button class="btn btn--primary">Đăng nhập</button>
+                        </div>        
+                    </div>
+                    <div class="authen__footer">
+                        <a href="#" class="btn-social--fb"><i class="fab fa-facebook-square icon-fb"></i>Kết nối với Facebook</a>
+                        <a href="#" class="btn-social--gg"><i class="fab fa-google icon-gg"></i>Kết nối với Google</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal--register">
+        <div class="modal__display"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                      
+                 <div class="authen__container">
+                    <div class="authen__header">
+                        <p class="authen__header--text">Đăng ký</p>
+                        <a href="#" class="authen__header--btn click-change--login">Đăng nhập</a>
+                    </div>
+                    <div class="authen__body">
+                        <div class="authen__body--input">
+                            <input type="email" class="authen__body--tel" placeholder="Nhập email">
+                        </div>
+                        <div class="authen__body--input">
+                            <input type="password" class="authen__body--pw" placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="authen__body--input">
+                            <input type="password" class="authen__body--acpw" placeholder="Xác nhận mật khẩu">
+                        </div>
+                    </div>
+                    <div class="authen__policy">
+                        <p class="authen__policy--text1">
+                            Bằng việc đăng ký, bạn đã đồng ý với ShopHuy về
+                            <a href="#" class="authen__policy--text2">Điều khoản dịch vụ</a> &
+                            <a href="#" class="authen__policy--text2">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="authen__form-controls">
+                        <button class="btn margin-btn">Trở lại</button>
+                        <button class="btn btn--primary">Đăng ký</button>
+                    </div>        
+                </div>
+                <div class="authen__footer">
+                    <a href="#" class="btn-social--fb"><i class="fab fa-facebook-square icon-fb"></i>Kết nối với Facebook</a>
+                    <a href="#" class="btn-social--gg"><i class="fab fa-google icon-gg"></i>Kết nối với Google</a>
+                </div> 
+                   
+</body>
+<script src="./main.js"></script>
+<script src="https://kit.fontawesome.com/1c6e232d4a.js" crossorigin="anonymous"></script>
+</html>
