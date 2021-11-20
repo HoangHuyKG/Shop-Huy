@@ -51,5 +51,21 @@ for(i of GetclickBack){
         getModalregister.style.display = 'none'
     } )
 }
+// click Like
+var GetClickHearts = document.querySelectorAll('.like')
+var GetclickHeartsclose = document.querySelectorAll('.unlike')
+GetClickHearts.forEach ((item,index)=> {
+    item.onclick = function(){
+        this.classList.add('open')
+        GetclickHeartsclose[index].classList.remove('close')
+    }
+})
+GetclickHeartsclose.forEach ((item,index)=> {
+    item.onclick = function(){
+        this.classList.add('close')
+        GetClickHearts[index].classList.remove('open')
+    }
+})
+
 
 
