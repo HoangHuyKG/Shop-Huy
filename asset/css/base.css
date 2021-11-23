@@ -60,6 +60,7 @@ html {
     width: calc(100%/12*10);
 }
 
+
 /* Animation */
 @keyframes OpenDownloadApp {
     from{

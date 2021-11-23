@@ -3,12 +3,16 @@ const getClickNotify = document.querySelector('.nav-notify')
 const getClickRegister = document.querySelector('.nav__list-item.nav__list-item--strong.nav__list-item--split')
 const getModalregister = document.querySelector('.modal--register')
 const getCLickRegisterinnotify = document.querySelector('.nav-notify-login')
+const getClicknavmb = document.querySelector('.head__nav')
     getClickRegister.addEventListener('click', function(){
         getModalregister.style.display = 'flex';
-
+        getClicknavmb.classList.add('close')
+        getClicknavmb.classList.add('close2')
     })
     getCLickRegisterinnotify.addEventListener('click', function(){
         getModalregister.style.display = 'flex';
+        getClicknavmb.classList.add('close')
+        getClicknavmb.classList.add('close2')
     })
 // Open form login
 const getClickLogin = document.querySelector('.nav__list-item.nav__list-item--strong.nav__list-item--space')
@@ -16,17 +20,25 @@ const getModallogin = document.querySelector('.modal--login')
 const getClickLoginonnotify = document.querySelector('.nav-notify-logon')
         getClickLogin.addEventListener('click', function(){
         getModallogin.style.display = 'flex';
+        getClicknavmb.classList.add('close')
+        getClicknavmb.classList.add('close2')
     })
         getClickLoginonnotify.addEventListener('click', function(){
         getModallogin.style.display = 'flex';
+        getClicknavmb.classList.add('close')
+        getClicknavmb.classList.add('close2')
     })
 // Close from
 const getModalbody = document.querySelectorAll('.modal__body')
 getModalregister.addEventListener('click', function(){
     getModalregister.style.display = 'none'
+    getClicknavmb.classList.remove('close')
+    getClicknavmb.classList.remove('close2')
 })
 getModallogin.addEventListener('click', function(){
     getModallogin.style.display = 'none'
+    getClicknavmb.classList.remove('close')
+    getClicknavmb.classList.remove('close2')
 })
 for(modal of getModalbody){
 modal.addEventListener('click', function(event){
@@ -49,6 +61,8 @@ for(i of GetclickBack){
     i.addEventListener('click', function(){
         getModallogin.style.display = 'none'
         getModalregister.style.display = 'none'
+        getClicknavmb.classList.remove('close')
+        getClicknavmb.classList.remove('close2')
     } )
 }
 // click Like
@@ -66,6 +80,13 @@ GetclickHeartsclose.forEach ((item,index)=> {
         GetClickHearts[index].classList.remove('open')
     }
 })
+// open seach on mobole
+// const getclicksearchinmb = document.querySelector('.mobilenav')
+// const getDisplaysearchmb = document.querySelector('.headerlower-search')
+// getclicksearchinmb.onclick = function (){
+//     getDisplaysearchmb.style.display = 'flex'
+// }
+
 
 
 
